@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 2rem;
+}
+
+.word-container {
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+#word {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 1rem 0;
+}
+
+#timer {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #1a73e8;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #1a73e8;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.icon-btn:hover {
+    color: #1557b0;
+}
+
+#options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.option {
+    padding: 1rem;
+    background-color: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.option:hover {
+    background-color: #f0f2f5;
+    border-color: #1a73e8;
+}
+
+.option.selected {
+    background-color: #e8f0fe;
+    border-color: #1a73e8;
+}
+
+.option.correct {
+    background-color: #e6f4ea;
+    border-color: #34a853;
+}
+
+.option.wrong {
+    background-color: #fce8e6;
+    border-color: #ea4335;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    text-align: center;
+}
+
+#score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a73e8;
+}
+
+#feedback {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#feedback.correct {
+    background-color: #e6f4ea;
+    color: #34a853;
+}
+
+#feedback.wrong {
+    background-color: #fce8e6;
+    color: #ea4335;
+}
